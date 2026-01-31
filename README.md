@@ -67,9 +67,22 @@ bash: Check EFI usage
 Backup and rebuild EFI partition
 - `sudo cp -r /boot/efi/* ~/efi-backup/`
 - `sudo umount /boot/efi`
-- `sudo mkfs.fat -F32 /dev/nvme0n1p1`
 - `sudo mount /dev/nvme0n1p1 /boot/efi`
 - `sudo cp -r ~/efi-backup/* /boot/efi/`
+
+Repair GRUB and chroot into mounted system
+- `sudo mount /dev/nvme0n1p5 /mnt`
+- `sudo mount --bind /dev /mnt/dev`
+- `sudo mount --bind /proc /mnt/proc`
+- `sudo mount --bind /sys /mnt/sys`
+- `sudo mount --bind /run /mnt/run`
+- `sudo chroot /mnt`
+
+Reinstall GRUB bootloader
+- `grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=Ubuntu --recheck`
+- `update-grub`
+- `exit`  ← Exit chroot
+- `sudo umount -R /mnt`  ← Clean up mounts
 
 Attempt firmware update again
 - `sudo fwupdmgr get-updates`
