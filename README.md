@@ -26,10 +26,9 @@ Screenshots documenting the full process are located in the `images/` folder:
 
 Commands Used
 
-These were run throughout the recovery and verification process.
+I used these throughout the recovery and verification process.
 
-bash
-Check EFI usage
+bash: Check EFI usage
 - `df -h /boot/efi`
 
 Backup and rebuild EFI partition
