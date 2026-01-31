@@ -30,10 +30,10 @@ These were run throughout the recovery and verification process.
 
 bash
 Check EFI usage
-'df -h /boot/efi'
+`df -h /boot/efi`
 
 Backup and rebuild EFI partition
-sudo cp -r /boot/efi/* ~/efi-backup/
+`sudo cp -r /boot/efi/* ~/efi-backup/`
 sudo umount /boot/efi
 sudo mkfs.fat -F32 /dev/nvme0n1p1
 sudo mount /dev/nvme0n1p1 /boot/efi
