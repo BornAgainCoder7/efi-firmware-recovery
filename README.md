@@ -19,7 +19,7 @@ Screenshots documenting the full process are located in the `images/` folder:
 
 EFI Partition Error
 
-![EFI error message](images/01-efi-error-message.png)  
+<img src="images/01-efi-error-message.png" alt="EFI error message" width="600"/>
 `df -h /boot/efi` showing limited space
 
 Firmware Update Failed
