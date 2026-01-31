@@ -41,24 +41,24 @@ Backup and rebuild EFI partition
 
 Attempt firmware update again
 - `sudo fwupdmgr get-updates`
-sudo fwupdmgr update
+- `sudo fwupdmgr update`
 
 System performance checks
-free -h
-uptime
-top
-systemd-analyze blame
+- `free -h`
+- `uptime`
+- `top`
+- `systemd-analyze blame`
 
 Check boot-time errors
-journalctl -b -p err
+- `journalctl -b -p err`
 
 Remove unused Snap apps (optional cleanup)
-sudo snap remove firefox
-sudo snap remove snap-store
-sudo snap remove snapd-desktop-integration
+- `sudo snap remove firefox`
+- `sudo snap remove snap-store`
+- `sudo snap remove snapd-desktop-integration`
 
 System Info
-Dell Latitude 7330
-Firmware version upgraded from 1.34.1 to 1.37.0
-Ubuntu with GNOME Desktop
-EFI partition: 96MB FAT32 (cleaned for space)
+- Dell Latitude 7330
+- Firmware version upgraded from 1.34.1 to 1.37.0
+- Ubuntu with GNOME Desktop
+- EFI partition: 96MB FAT32 (cleaned for space)
