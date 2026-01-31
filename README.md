@@ -18,37 +18,30 @@ Screenshots
 Screenshots documenting the full process are located in the `images/` folder:
 
 EFI Partition Error
-
 <img src="images/01-efi-error-message.png" alt="EFI error message" width="600"/>
 `df -h /boot/efi` showing limited space
 
 Firmware Update Failed
-
 ![Memory not enough](images/02-memory-not-enough.png)  
 `fwupdmgr` firmware update failed
 
 Firmware Installed Successfully
-
 <img src="images/03-firmware-installed-success.png" alt="Firmware success" width="600"/>  
 Successful update confirmation
 
 System Firmware Version
-
-![System firmware](images/04-system-firmware-version.png)
+<img src="images/04-system-firmware-version.png" alt="System firmware version details" width="600"/>
 
 Boot Logs Before Fix
-
-![Boot log before](images/05-boot-log-before.png)  
+<img src="images/05-boot-log-before.png" alt="Boot log errors before EFI fix - journalctl" width="600"/>
 `journalctl` errors before recovery
 
 Boot Logs After Fixes
-
-![Boot log after](images/06-boot-log-after.png)  
+<img src="images/06-boot-log-after.png" alt="Improved boot logs after EFI fix" width="600"/> 
 Improved logs after fixes
 
 System Performance Check
-
-![System performance](images/07-system-performance-check.png)  
+<img src="images/07-system-performance-check.png" alt="System performance - free, uptime, top" width="600"/>
 Output of `free -h`, `uptime`, and `top`
 
 Commands Used
