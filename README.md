@@ -29,17 +29,18 @@ Commands Used
 These were run throughout the recovery and verification process.
 
 bash
-Check EFI usage - `df -h /boot/efi`
+Check EFI usage
+- `df -h /boot/efi`
 
-Backup and rebuild EFI partition - 
-`sudo cp -r /boot/efi/* ~/efi-backup/`
-`sudo umount /boot/efi`
-`sudo mkfs.fat -F32 /dev/nvme0n1p1`
-`sudo mount /dev/nvme0n1p1 /boot/efi`
-`sudo cp -r ~/efi-backup/* /boot/efi/`
+Backup and rebuild EFI partition
+- `sudo cp -r /boot/efi/* ~/efi-backup/`
+- `sudo umount /boot/efi`
+- `sudo mkfs.fat -F32 /dev/nvme0n1p1`
+- `sudo mount /dev/nvme0n1p1 /boot/efi`
+- `sudo cp -r ~/efi-backup/* /boot/efi/`
 
 Attempt firmware update again
-sudo fwupdmgr get-updates
+- `sudo fwupdmgr get-updates`
 sudo fwupdmgr update
 
 System performance checks
