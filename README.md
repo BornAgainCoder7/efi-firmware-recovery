@@ -29,7 +29,7 @@ Firmware Update Failed
 
 Firmware Installed Successfully
 
-![Firmware installed](images/03-firmware-installed-success.png)  
+<img src="images/03-firmware-installed-success.png" alt="Firmware success" width="600"/>  
 Successful update confirmation
 
 System Firmware Version
