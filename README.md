@@ -28,9 +28,9 @@ Commands Used
 
 These were run throughout the recovery and verification process.
 
-```bash
+bash
 Check EFI usage
-df -h /boot/efi
+'df -h /boot/efi'
 
 Backup and rebuild EFI partition
 sudo cp -r /boot/efi/* ~/efi-backup/
