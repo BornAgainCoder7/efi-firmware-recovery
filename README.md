@@ -17,12 +17,39 @@ Screenshots
 
 Screenshots documenting the full process are located in the `images/` folder:
 
-- `efi-error-message.png` — `df -h /boot/efi` showing limited space
-- `memory-not-enough.png` — `fwupdmgr` firmware update failed
-- `firmware-installed-success.png` — successful update confirmation
-- `boot-log-before.png` — `journalctl` errors before recovery
-- `boot-log-after.png` — improved logs after fixes
-- `system-performance-check.png` — output of `free -h`, `uptime`, and `top`
+EFI Partition Error
+
+![EFI error message](images/01-efi-error-message.png)  
+`df -h /boot/efi` showing limited space
+
+Firmware Update Failed
+
+![Memory not enough](images/02-memory-not-enough.png)  
+`fwupdmgr` firmware update failed
+
+Firmware Installed Successfully
+
+![Firmware installed](images/03-firmware-installed-success.png)  
+Successful update confirmation
+
+System Firmware Version
+
+![System firmware](images/04-system-firmware-version.png)
+
+Boot Logs Before Fix
+
+![Boot log before](images/05-boot-log-before.png)  
+`journalctl` errors before recovery
+
+Boot Logs After Fixes
+
+![Boot log after](images/06-boot-log-after.png)  
+Improved logs after fixes
+
+System Performance Check
+
+![System performance](images/07-system-performance-check.png)  
+Output of `free -h`, `uptime`, and `top`
 
 Commands Used
 
