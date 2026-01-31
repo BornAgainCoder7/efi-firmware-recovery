@@ -70,6 +70,8 @@ Backup and rebuild EFI partition
 - `sudo mount /dev/nvme0n1p1 /boot/efi`
 - `sudo cp -r ~/efi-backup/* /boot/efi/`
 
+Partition management (used GParted GUI to resize and check disk layout)
+
 Repair GRUB and chroot into mounted system
 - `sudo mount /dev/nvme0n1p5 /mnt`
 - `sudo mount --bind /dev /mnt/dev`
