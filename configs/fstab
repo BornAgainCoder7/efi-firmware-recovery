@@ -1,0 +1,12 @@
+# /etc/fstab: static file system information.
+#
+# <file system> <mount point> <type> <options> <dump> <pass>
+
+# Root filesystem
+UUID=530844cd-4b8b-4dc2-a2c6-4a16d8d54bd7 / ext4 defaults 0 1
+
+# EFI System Partition
+UUID=40A2-5917 /boot/efi vfat defaults,nofail,x-systemd.device-timeout=5s 0 1
+
+# Swap
+/swap.img none swap sw 0 0
