@@ -17,12 +17,12 @@ Screenshots
 
 Screenshots documenting the full process are located in the `images/` folder:
 
-- `efi-error.png` — `df -h /boot/efi` showing limited space
-- `update-fail.png` — `fwupdmgr` firmware update failed
-- `firmware-success.png` — successful update confirmation
+- `efi-error-message.png` — `df -h /boot/efi` showing limited space
+- `memory-not-enough.png` — `fwupdmgr` firmware update failed
+- `firmware-installed-success.png` — successful update confirmation
 - `boot-log-before.png` — `journalctl` errors before recovery
 - `boot-log-after.png` — improved logs after fixes
-- `system-performance.png` — output of `free -h`, `uptime`, and `top`
+- `system-performance-check.png` — output of `free -h`, `uptime`, and `top`
 
 Commands Used
 
