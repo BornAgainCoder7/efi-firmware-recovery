@@ -7,8 +7,9 @@ To fix this, I added a line to `/etc/fstab` to ensure it mounts correctly at boo
 
 What I Added
 
-fstab
-UUID=40A2-5917 /boot/efi vfat defaults,nofail,x-systemd.device-timeout=5s 0 1
+`fstab`
+
+`UUID=40A2-5917 /boot/efi vfat defaults,nofail,x-systemd.device-timeout=5s 0 1`
 
 What This Line Does
 
