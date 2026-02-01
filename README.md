@@ -104,6 +104,14 @@ Remove unused Snap apps (optional cleanup)
 - `sudo snap remove snap-store`
 - `sudo snap remove snapd-desktop-integration`
 
+EFI Partition Mount Fix
+
+During recovery, I edited the `/etc/fstab` file to make sure the EFI partition mounted correctly at boot.  
+This was required for the firmware update to succeed.
+
+[View the fstab configuration and explanation](configs/fstab-notes.md)
+
+
 System Info
 - Dell Latitude 7330
 - Firmware version upgraded from 1.34.1 to 1.37.0
