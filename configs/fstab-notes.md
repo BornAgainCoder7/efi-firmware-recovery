@@ -15,6 +15,6 @@ What This Line Does
 - `UUID=40A2-5917`: This is the unique ID for my EFI partition.
 - `/boot/efi`: This is where the EFI partition should be mounted.
 - `vfat`: The partition is formatted as VFAT (FAT32), required by UEFI systems.
-- **defaults**: Uses default mount options.
-- **nofail**: Prevents the system from stopping boot if this partition isn't found.
-- **x-systemd.device-timeout=5s**: Sets a 5-second timeout to wait for the device before continuing boot.
+- `defaults`: Uses default mount options.
+- `nofail`: Prevents the system from stopping boot if this partition isn't found.
+- `x-systemd.device-timeout=5s`: Sets a 5-second timeout to wait for the device before continuing boot.
